@@ -23,3 +23,43 @@ Exemplo de numeração:
 
 ### Código de barras
 O bilhete impresso pela maquina de cartão deverá ser exatamente o numero de bilhete e série registrado no sistema do parque, o mesmo poderá ser impressora do tipo de código de barra Code39 e ou QRCode.
+
+
+### Registro do bilhete
+Após ser emitido o bilhete na maquina de cartão o sistema do cartão deverá regsitrar os bilhetes emitidos no sistema do parque. Isso deverá ser feito pode lotes (vendas). Cada venda é responsavel por um pagamento.
+O JSON que deverá ser enviado para o sistema do parque deverá ser:
+
+```json
+{
+  "lote"       : "000123",
+  "emissao"    : "2023-01-01 12:35:00",
+  "serie"      : "01",    
+  "pagamento": {
+    "forma_pagto": "1",
+    "valor_total": 110.00,
+    "parcelas": 1,
+    "codigo_transacao": "codigo de transacao do pagamento da maquina",
+    "codigo_comprovante": "codigo do comprovante de pagamento",
+    "codigo_autorizacao": "codigo de autorizacao do pagamento",
+    "bandeira_cartao"   : "VISA",
+    "cartao_numero"     : "000268******1234",
+    "nome_no_cartao"    : "Fulano da Silva"
+  },
+  "bilhetes": [
+    {
+      "numero": "010000001234",
+      "produto": "AD123",
+      "valor"  : 45.00
+    },
+    {
+      "numero": "010000001235",
+      "produto": "AD123",
+      "valor"  : 45.00
+    },
+    {
+      "numero": "010000001236",
+      "produto": "IN123",
+      "valor"  : 20.00
+    }        
+  ]
+```
