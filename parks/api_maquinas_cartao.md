@@ -63,3 +63,18 @@ O JSON que deverá ser enviado para o sistema do parque deverá ser:
     }        
   ]
 ```
+
+### Resposta do registro
+
+```json
+{
+  "status"  : "lote_registrado",
+  "lote"    : "000123",
+  "serie"   : "01",
+  "lote_id" : 2
+}
+```
+
+### AccessToken
+A requisição deverá ser executada via método POST (Rest) com autorização via AccessToken que será fornecido durante a configuração o sistema, o mesmo accesstoken poderá ser utilizado por várias maquinas de cartão.
+As requisições deverão ser enviadas para um endpoint fornecido durante a configuração do sistema.
