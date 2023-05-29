@@ -78,3 +78,14 @@ O JSON que deverá ser enviado para o sistema do parque deverá ser:
 ### AccessToken
 A requisição deverá ser executada via método POST (Rest) com autorização via AccessToken que será fornecido durante a configuração o sistema, o mesmo accesstoken poderá ser utilizado por várias maquinas de cartão.
 As requisições deverão ser enviadas para um endpoint fornecido durante a configuração do sistema.
+
+### Tabela - Formas de Pagamento
+
+----------------------------------------------------------------------------------
+| Forma de Pagamento | Código                                                    |
+|--------------------|-----------------------------------------------------------|
+| Cartão de crédito  | FP-001                                                    |
+| Cartão de débito   | FP-002                                                    |
+| PIX                | FP-003                                                    |
+| Dinheiro           | FP-004                                                    |
+----------------------------------------------------------------------------------
