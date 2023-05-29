@@ -84,8 +84,8 @@ As requisições deverão ser enviadas para um endpoint fornecido durante a conf
 ----------------------------------------------------------------------------------
 | Forma de Pagamento | Código                                                    |
 |--------------------|-----------------------------------------------------------|
-| Cartão de crédito  | FP-001                                                    |
-| Cartão de débito   | FP-002                                                    |
-| PIX                | FP-003                                                    |
-| Dinheiro           | FP-004                                                    |
+| Cartão de crédito  | 1                                                         |
+| Cartão de débito   | 2                                                         |
+| PIX                | 3                                                         |
+| Dinheiro           | 4                                                         |
 ----------------------------------------------------------------------------------
