@@ -31,7 +31,7 @@ O JSON que deverá ser enviado para o sistema do parque deverá ser:
 
 ```json
 {
-  "lote"       : "000123",
+  "lote"       : "00123",
   "emissao"    : "2023-01-01 12:35:00",
   "serie"      : "01",    
   "pagamento": {
