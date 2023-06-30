@@ -8,12 +8,13 @@ Abaixo mostro a ordem e definição dos campos:
 
 ### Tabela - Linha Cabeçalho do Arquivo (G001)
 
-| Número | Campo            | Descrição                                          | Tipo | Tamanho |
-|:------:|------------------|----------------------------------------------------|:----:|:-------:|
-|   01   |  ID_REG          |  Identificação do registro. Texto "G001"           |  C   |   4     |
-|   02   |  VERSAO          |  Versão do leiaute do arquivo. Versão atual "01"   |  C   |   2     |
-|   03   |  DATA_INI        |  Data inicial do periodo do arquivo (dd/mm/yyyy)   |  C   |   10    |
-|   04   |  DATA_FIM        |  Data termino do periodo do arquivo (dd/mm/yyyy)   |  C   |   10    |
+| Número | Campo            | Descrição                                                | Tipo | Tamanho |
+|:------:|------------------|----------------------------------------------------------|:----:|:-------:|
+|   01   |  ID_REG          |  Identificação do registro. Texto "G001"                 |  C   |   4     |
+|   02   |  VERSAO          |  Versão do leiaute do arquivo. Versão atual "01"         |  C   |   2     |
+|   03   |  DATA_INI        |  Data inicial do periodo do arquivo (dd/mm/yyyy)         |  C   |   10    |
+|   04   |  DATA_FIM        |  Data termino do periodo do arquivo (dd/mm/yyyy)         |  C   |   10    |
+|   05   |  DATA_GERACAO    |  Data e hora da geração do arquivo (dd/mm/yyyy hh:mm:ss) |  C   |   19    |
 
 ### Tabela - Linha com as informações da nota fiscal (N001)
 
