@@ -62,6 +62,7 @@ O JSON que deverá ser enviado para o sistema do parque deverá ser:
       "valor"  : 20.00
     }        
   ]
+}
 ```
 
 ### Resposta do registro
