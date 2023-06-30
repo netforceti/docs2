@@ -45,7 +45,7 @@ Abaixo mostro a ordem e definição dos campos:
 | Número | Campo            | Descrição                                          | Tipo | Tamanho |
 |:------:|------------------|----------------------------------------------------|:----:|:-------:|
 |   01   |  ID_REG          |  Identificação do registro. Texto "N990"           |  C   |   4     |
-|   02   |  QTD_LINHAS      |  Quantidade de itens da nota fiscal. Linhas "N002" |  N   |   2*    |
+|   02   |  QTD_LINHAS      |  Quantidade de itens da nota fiscal. Linhas "N100" |  N   |   2*    |
 
 
 ### Tabela - Linha Rodapé do Arquivo (G990)
