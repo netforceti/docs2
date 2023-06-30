@@ -18,8 +18,27 @@ Abaixo mostro a ordem e definição dos campos:
 | Número | Campo            | Descrição                                          | Tipo | Tamanho |
 |:------:|------------------|----------------------------------------------------|:----:|:-------:|
 |   01   |  ID_REG          |  Identificação do registro. Texto "N001"           |  C   |   4     |
-|   02   |  CNPJ            |  Versão do leiaute do arquivo. Versão atual "01"   |  C   |   2     |
-|   03   |  xxxx            |  Versão do leiaute do arquivo. Versão atual "01"   |  C   |   2     |
+|   02   |  NUMERO_RPS      |  Número da RPS                                     |  C   |   20    |
+|   03   |  EMISSAO_RPS     |  Data de emissão da RPS (dd/mm/yyyy hh:mm:ss)      |  C   |   19    |
+|   04   |  CNPJ/CPF        |  CNPJ / CPF do cliente                             |  C   |   14    |
+|   05   |  VALOR_SERVICO   |  Valor do serviço                                  |  N   |   2*    |
+|   06   |  BASE_CALCULO    |  Valor da base de calculo do ISS                   |  N   |   2*    |
+|   07   |  ALIQUOTA_ISS    |  Percentual da aliquota do ISS                     |  N   |   2*    |
+|   07   |  VALOR_ISS       |  Valor do do ISS                                   |  N   |   2*    |
+
+### Tabela - Linha do item da nota fiscal (N100)
+
+| Número | Campo            | Descrição                                          | Tipo | Tamanho |
+|:------:|------------------|----------------------------------------------------|:----:|:-------:|
+|   01   |  ID_REG          |  Identificação do registro. Texto "N100"           |  C   |   4     |
+|   02   |  NUMERO_RPS      |  Número da RPS                                     |  C   |   20    |
+|   03   |  PROD_CODIGO     |  Código do produto                                 |  C   |   20    |
+|   04   |  PROD_DESCRICAO  |  Descrição do produto                              |  C   |   255   |
+|   05   |  QTDADE          |  Qtdade do produto na nota                         |  N   |   2*    |
+|   06   |  VALOR           |  Valor unitario do produto na nota                 |  N   |   2*    |
+|   07   |  VALOR_TOTAL     |  Valor total do produto na nota                    |  N   |   2*    |
+|   08   |  CONTA_CONTABIL  |  Conta contabil do produto                         |  C   |   100   |
+
 
 ### Tabela - Linha Rodapé da nota fical (N990)
 
