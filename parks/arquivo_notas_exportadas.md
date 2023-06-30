@@ -21,13 +21,14 @@ Abaixo mostro a ordem e definição dos campos:
 | Número | Campo            | Descrição                                          | Tipo | Tamanho |
 |:------:|------------------|----------------------------------------------------|:----:|:-------:|
 |   01   |  ID_REG          |  Identificação do registro. Texto "N001"           |  C   |   4     |
-|   02   |  NUMERO_RPS      |  Número da RPS                                     |  C   |   20    |
-|   03   |  EMISSAO_RPS     |  Data de emissão da RPS (dd/mm/yyyy hh:mm:ss)      |  C   |   19    |
-|   04   |  CNPJ/CPF        |  CNPJ / CPF do cliente                             |  C   |   14    |
-|   05   |  VALOR_SERVICO   |  Valor do serviço                                  |  N   |   2*    |
-|   06   |  BASE_CALCULO    |  Valor da base de calculo do ISS                   |  N   |   2*    |
-|   07   |  ALIQUOTA_ISS    |  Percentual da aliquota do ISS                     |  N   |   2*    |
-|   07   |  VALOR_ISS       |  Valor do do ISS                                   |  N   |   2*    |
+|   02   |  SITUACAO_RPS    |  Situação da RPS (2 = Autorizado, 4 = Cancelado)   |  C   |   1     |
+|   03   |  NUMERO_RPS      |  Número da RPS                                     |  C   |   20    |
+|   04   |  EMISSAO_RPS     |  Data de emissão da RPS (dd/mm/yyyy hh:mm:ss)      |  C   |   19    |
+|   05   |  CNPJ/CPF        |  CNPJ / CPF do cliente                             |  C   |   14    |
+|   06   |  VALOR_SERVICO   |  Valor do serviço                                  |  N   |   2*    |
+|   07   |  BASE_CALCULO    |  Valor da base de calculo do ISS                   |  N   |   2*    |
+|   08   |  ALIQUOTA_ISS    |  Percentual da aliquota do ISS                     |  N   |   2*    |
+|   09   |  VALOR_ISS       |  Valor do do ISS                                   |  N   |   2*    |
 
 ### Tabela - Linha do item da nota fiscal (N100)
 
