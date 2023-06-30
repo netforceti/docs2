@@ -12,6 +12,8 @@ Abaixo mostro a ordem e definição dos campos:
 |:------:|------------------|----------------------------------------------------|:----:|:-------:|
 |   01   |  ID_REG          |  Identificação do registro. Texto "G001"           |  C   |   4     |
 |   02   |  VERSAO          |  Versão do leiaute do arquivo. Versão atual "01"   |  C   |   2     |
+|   03   |  DATA_INI        |  Data inicial do periodo do arquivo                |  C   |   19    |
+|   04   |  DATA_FIM        |  Data termino do periodo do arquivo                |  C   |   19    |
 
 ### Tabela - Linha com as informações da nota fiscal (N001)
 
