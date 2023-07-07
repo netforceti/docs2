@@ -11,7 +11,7 @@ Abaixo mostro a ordem e definição dos campos:
 | Número | Campo            | Descrição                                                | Tipo | Tamanho |
 |:------:|------------------|----------------------------------------------------------|:----:|:-------:|
 |   01   |  ID_REG          |  Identificação do registro. Texto "G001"                 |  C   |   4     |
-|   02   |  VERSAO          |  Versão do leiaute do arquivo. Versão atual "01"         |  C   |   2     |
+|   02   |  VERSAO          |  Versão do leiaute do arquivo. Versão atual "02"         |  C   |   2     |
 |   03   |  DATA_INI        |  Data inicial do periodo do arquivo (dd/mm/yyyy)         |  C   |   10    |
 |   04   |  DATA_FIM        |  Data termino do periodo do arquivo (dd/mm/yyyy)         |  C   |   10    |
 |   05   |  DATA_GERACAO    |  Data e hora da geração do arquivo (dd/mm/yyyy hh:mm:ss) |  C   |   19    |
@@ -24,11 +24,20 @@ Abaixo mostro a ordem e definição dos campos:
 |   02   |  SITUACAO_RPS    |  Situação da RPS (2 = Autorizado, 4 = Cancelado)   |  C   |   1     |
 |   03   |  NUMERO_RPS      |  Número da RPS                                     |  C   |   20    |
 |   04   |  EMISSAO_RPS     |  Data de emissão da RPS (dd/mm/yyyy hh:mm:ss)      |  C   |   19    |
-|   05   |  CNPJ/CPF        |  CNPJ / CPF do cliente                             |  C   |   14    |
-|   06   |  VALOR_SERVICO   |  Valor do serviço                                  |  N   |   2*    |
-|   07   |  BASE_CALCULO    |  Valor da base de calculo do ISS                   |  N   |   2*    |
-|   08   |  ALIQUOTA_ISS    |  Percentual da aliquota do ISS                     |  N   |   2*    |
-|   09   |  VALOR_ISS       |  Valor do do ISS                                   |  N   |   2*    |
+|   05   |  NUMERO_NFSE     |  Número da NFSE                                    |  C   |   20    |
+|   06   |  CNPJ/CPF        |  CNPJ / CPF do cliente                             |  C   |   14    |
+|   07   |  NOME            |  Nome do cliente                                   |  C   |   250   |
+|   08   |  LOGRADOURO      |  Logradouro do endereço do cliente                 |  C   |   250   |
+|   09   |  NUMERO          |  Número do endereço do cliente                     |  C   |   20    |
+|   10   |  COMPLEMENTO     |  Complemento do endereço do cliente                |  C   |   50    |
+|   11   |  BAIRRO          |  Bairro do endereço do cliente                     |  C   |   250   |
+|   12   |  CEP             |  CEP do endereço do cliente                        |  C   |   8     |
+|   13   |  ESTADO_SIGLA    |  Sigla do estado do endereço do cliente            |  C   |   2     |
+|   14   |  MUNICIPIO_NOME  |  Nome do município do endereço do cliente          |  C   |   250   |
+|   15   |  VALOR_SERVICO   |  Valor do serviço                                  |  N   |   2*    |
+|   16   |  BASE_CALCULO    |  Valor da base de calculo do ISS                   |  N   |   2*    |
+|   17   |  ALIQUOTA_ISS    |  Percentual da aliquota do ISS                     |  N   |   2*    |
+|   18   |  VALOR_ISS       |  Valor do do ISS                                   |  N   |   2*    |
 
 ### Tabela - Linha do item da nota fiscal (N100)
 
